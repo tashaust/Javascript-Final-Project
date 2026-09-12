@@ -172,7 +172,6 @@ nav,
   max-width: 800px;
 }
 
-
 .scroll {
   position: absolute;
   bottom: 20px;
@@ -490,7 +489,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .title {
     font-size: 80px;
   }
@@ -521,19 +520,7 @@ footer {
   .nav__link:first-child {
     display: none;
   }
-  .project__description--para {
-    display: none;
-  }
-  .project__description {
-    left: 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .project__description--sub-title {
-    margin-bottom: 8px;
-  }
   .modal__half {
     padding: 40px;
   }
-}
+} */
