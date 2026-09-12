@@ -472,6 +472,18 @@ font-size: 28px;
 text-align: left;
 }
 
+.genre__filter {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.genre__checkbox {
+transform: scale(.5);
+align-items: right; 
+}
+
 /* FOOTER */
 
 footer {
@@ -491,7 +503,6 @@ footer {
   width: 85px;
   margin-right: 10px;
 }
-
 
 .footer__copywright {
   color: white;

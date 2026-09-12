@@ -27,3 +27,23 @@ function toggleModal() {
   isModalOpen = true;
   document.body.classList += " modal--open";
 }
+
+// function filterGenres() {
+//     const checkboxes = document.querySelectorAll('.genre');
+//     const selectedGenres = [];
+
+//     checkboxes.forEach((checkbox) => {
+//         if (checkbox.checked) {
+//             selectedGenres.push(checkbox.value);
+//         }
+//     });
+
+//     const allBooks = document.querySelectorAll('.book');
+    
+//     allBooks.forEach((book) => {
+//         const bookGenres = book.dataset.genres.split(',');
+//         const isVisible = selectedGenres.length === 0 || selectedGenres.some(genre => bookGenres.includes(genre));
+        
+//         book.style.display = isVisible ? 'block' : 'none';
+//     });
+// }
