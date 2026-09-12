@@ -432,6 +432,7 @@ nav {
   border-radius: 500px;
   border: 2px solid #e5e7eb;
   padding: 20px 192px 20px 32px;
+  margin-top: 40px;
   color: #smokewhite;
   font-size: 16px;
   font-weight: 500;
@@ -446,6 +447,7 @@ nav {
 
 .search__bar--btn {
   margin-left: 475px;
+  margin-top: 40px;
   height: 28px;
   width: 90px;
   z-index: 2;
@@ -462,6 +464,13 @@ nav {
   background-color: #014d4e;
 }
 
+
+/* RESULTS */
+
+.section__results {
+font-size: 28px;
+text-align: left;
+}
 
 /* FOOTER */
 
