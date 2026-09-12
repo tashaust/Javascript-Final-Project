@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasha Austin</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <section id="landing-page">
+      <nav>
+        <figure>
+          <img
+            id="personal-logo"
+            src="./assets 13-21-04-240/original-47d9e66d463ceabd78632f789f2181cc.gif"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Join Us</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#search"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Find Your Book</a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hi <b class="teal">readers</b>!</h1>
+          <p class="header__para">
+            This is <b class="teal"> your</b> go to site, where you can explore new books, find your next favorite read, and <b class="teal">connect</b> with other book lovers so far.
+          </p>
+        </div>
+      </header>
+      <a href="#search" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__join">
+          <h3 class="modal__title modal__title--about">
+            Want to join the <b class="teal">community</b>?
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about"></h4>
+          <p class="modal__para">
+Whether you're a seasoned reader or just starting your literary journey, our community welcomes everyone. Join us to share your thoughts, discover new books, and connect with fellow book enthusiasts.
+            <br />
+            <br />
+Our members enjoy exclusive access to book discussions, author interviews, and special events. Don't miss out on the opportunity to be part of a vibrant and supportive community that celebrates the love of reading.
+          </p>
+        </div>
+        <div class="modal__half modal__contact">
+                  <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Ready? Set? Read!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact teal">
+            Fill out the form below and we'll be in touch as soon as possible.
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea
+                class="input"
+                name="message"
+                type="text"
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Submit
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to reading with you soon.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="search">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Our <span class="teal">Favorite</span> Reads of <span class="teal">2026</span>
+          </h1>
+          <ul class="search__list">
+            <li class="search">
+              <a href="#">
+                <img class="search__img" src="https://cdn.shopify.com/s/files/1/0674/5433/7265/files/9798217287857_p0.jpg?v=1775530131" />
+              </a>
+            </li>
+            <li class="search">
+              <a href="#">
+                <img class="search__img" src="https://neighborbookstx.com/cdn/shop/files/9781954118812-us.jpg?v=1778776276" />
+              </a>
+            </li>
+            <li class="search">
+              <a href="#">
+                <img class="search__img" src="https://m.media-amazon.com/images/I/91hU-bOyYJL._UF1000,1000_QL80_.jpg" />
+              </a>
+            </li>
+            <li class="search">
+              <a href="#">
+                <img class="search__img" src="https://www.sourcebooks.com/media/catalog/product/9/7/9781464249624_58.jpg?auto=webp&format=pjpg&width=640&height=800&fit=cover" />
+              </a>
+            </li>
+            <li class="search">
+              <a href="#">
+                <img class="search__img" src="https://m.media-amazon.com/images/I/81pbP7twi5L._AC_UF1000,1000_QL80_.jpg" />
+              </a>
+            </li>
+            <li class="search">
+              <a href="#">
+                <img class="search__img" src="https://birchbarkbooks.com/cdn/shop/files/whistler.jpg?v=1771527418" />
+              </a>
+            </li>
+            <li class="search">
+              <a href="#">
+                <img class="search__img" src="https://www.hachettebookgroup.com/wp-content/uploads/2025/12/9781538780794.jpg?w=430" />
+              </a>
+            </li>
+            <li class="search">
+              <a href="#">
+                <img class="search__img" src="https://mpd-biblio-covers.imgix.net/9781250337818.jpg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img
+              class="footer__logo--img"
+              src="./assets 13-21-04-240/original-47d9e66d463ceabd78632f789f2181cc.gif"
+            />
+          </figure>
+          <div class="footer__copywright">Copywright © 2026 Tasha Austin</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
