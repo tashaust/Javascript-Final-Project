@@ -28,22 +28,22 @@ function toggleModal() {
   document.body.classList += " modal--open";
 }
 
-// function filterGenres() {
-//     const checkboxes = document.querySelectorAll('.genre__checkbox');
-//     const selectedGenres = [];
+function filterGenres() {
+    const checkboxes = document.querySelectorAll('.genre__checkbox');
+    const selectedGenres = [];
 
-//     checkboxes.forEach((checkbox) => {
-//         if (checkbox.checked) {
-//             selectedGenres.push(checkbox.value);
-//         }
-//     });
+    checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+            selectedGenres.push(checkbox.value);
+        }
+    });
 
-//     const allBooks = document.querySelectorAll('.results__item');
+    const allBooks = document.querySelectorAll('.results__item');
     
-//     allBooks.forEach((book) => {
-//         const bookGenres = book.dataset.genres.split(',');
-//         const isVisible = selectedGenres.length === 0 || selectedGenres.some(genre => bookGenres.includes(genre));
+    allBooks.forEach((book) => {
+        const bookGenres = book.dataset.genres.split(',');
+        const isVisible = selectedGenres.length === 0 || selectedGenres.some(genre => bookGenres.includes(genre));
         
-//         book.style.display = isVisible ? 'block' : 'none';
-//     });
-// }
+        book.style.display = isVisible ? 'block' : 'none';
+    });
+}
