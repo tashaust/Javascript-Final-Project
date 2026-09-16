@@ -70,7 +70,7 @@ textarea:focus {
 }
 
 .container {
-  padding: 50px 0;
+  padding: 50px 50px;
   width: 100%;
 }
 
@@ -416,7 +416,7 @@ nav {
 }
 
 .search__bar {
-  margin-left: 465px;
+  margin-left: 415px;
   width: 100%;
   max-width: 600px;
   height: 68px;
@@ -424,7 +424,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .search__bar--input {
@@ -475,11 +475,17 @@ text-align: left;
 .genre__filter {
 width: 180px;
 flex-shrink: 0;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
 }
 
 .genre__checkbox {
-  transform: scale(0.6);
+  width: auto;
+  height: auto;
   margin-right: 8px;
+  accent-color: #048c7f;
 }
 
 .filter__btn {
@@ -501,6 +507,7 @@ flex-shrink: 0;
 
 .results__wrapper {
 flex: 1;
+padding-left: 20px;
 }
 
 .results__list {
