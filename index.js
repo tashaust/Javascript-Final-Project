@@ -29,7 +29,7 @@ function toggleModal() {
 }
 
 // function filterGenres() {
-//     const checkboxes = document.querySelectorAll('.genre');
+//     const checkboxes = document.querySelectorAll('.genre__checkbox');
 //     const selectedGenres = [];
 
 //     checkboxes.forEach((checkbox) => {
@@ -38,7 +38,7 @@ function toggleModal() {
 //         }
 //     });
 
-//     const allBooks = document.querySelectorAll('.book');
+//     const allBooks = document.querySelectorAll('.results__item');
     
 //     allBooks.forEach((book) => {
 //         const bookGenres = book.dataset.genres.split(',');
