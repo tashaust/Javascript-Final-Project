@@ -141,7 +141,6 @@ nav,
   transition: all 400ms;
 }
 
-
 /* LANDING PAGE */
 
 #landing-page {
@@ -155,15 +154,15 @@ nav,
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1400px;
- background-image: url('https://img.magnific.com/premium-photo/open-old-book-old-oak-wooden-table-green-wall-background_181667-25243.jpg?semt=ais_hybrid&w=740&q=80');
- background-position: center;
- height: 625px;
- color: whitesmoke;
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
- border-radius: 20px;
+  background-image: url("https://img.magnific.com/premium-photo/open-old-book-old-oak-wooden-table-green-wall-background_181667-25243.jpg?semt=ais_hybrid&w=740&q=80");
+  background-position: center;
+  height: 625px;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .header__para {
@@ -239,7 +238,6 @@ nav {
   color: #242424;
   font-weight: 700;
 }
-
 
 /* MODAL */
 
@@ -411,7 +409,7 @@ nav {
   transition: all 600ms ease;
 }
 
-.search__img:hover  {
+.search__img:hover {
   opacity: 0.7;
 }
 
@@ -433,7 +431,7 @@ nav {
   border: 2px solid #e5e7eb;
   padding: 20px 192px 20px 32px;
   margin-top: 40px;
-  color: #smokewhite;
+  color: whitesmoke;
   font-size: 16px;
   font-weight: 500;
   position: absolute;
@@ -442,7 +440,7 @@ nav {
 }
 
 .search__bar--input:hover {
-  border-color: #smokewhite;
+  border-color: whitesmoke;
 }
 
 .search__bar--btn {
@@ -464,24 +462,80 @@ nav {
   background-color: #014d4e;
 }
 
-
 /* RESULTS */
 
 .section__results {
-font-size: 28px;
-text-align: left;
+  font-size: 28px;
+  text-align: left;
 }
 
 .genre__filter {
-  font-size: 14px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .genre__checkbox {
-transform: scale(.5);
-align-items: right; 
+  transform: scale(0.6);
+  margin-right: 8px;
+}
+
+.filter__btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #048c7f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.results__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 90px;
+}
+
+.results__img {
+  width: 130px;
+  height: auto;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+  border-radius: 20px;
+  transition: all 600ms ease;
+}
+
+.results__img:hover {
+  opacity: 0.7;
+}
+
+.results__container {
+  position: relative;
+  display: inline-block;
+}
+
+.results__btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #048c7f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.results__container:hover .results__btn {
+  opacity: 1;
 }
 
 /* FOOTER */
@@ -507,7 +561,6 @@ footer {
 .footer__copywright {
   color: white;
 }
-
 
 /* @media (max-width: 768px) {
   .title {
