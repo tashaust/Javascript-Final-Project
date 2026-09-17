@@ -428,15 +428,16 @@ nav {
 }
 
 .search__bar--input {
-  width: 100%;
+  max-width: 600px;
   border-radius: 500px;
   border: 2px solid #e5e7eb;
   padding: 20px 192px 20px 32px;
   margin-top: 40px;
+  margin-left: 365px;
   color: whitesmoke;
   font-size: 16px;
   font-weight: 500;
-  position: absolute;
+  position: relative;
   z-index: 1;
   transition: border-color 300ms;
 }
@@ -446,11 +447,11 @@ nav {
 }
 
 .search__bar--btn {
-  margin-left: 475px;
-  margin-top: 40px;
-  height: 28px;
+  margin-top: 45px;
+  position: absolute;
+  height: 30px;
   width: 90px;
-  z-index: 2;
+  z-index: 1;
   border-radius: 500px;
   border: none;
   background-color: #048c7f;
@@ -515,6 +516,7 @@ padding-left: 20px;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 40px;
+  padding: 20px;
 }
 
 .results__img {

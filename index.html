@@ -38,7 +38,7 @@
           </li>
           <li class="nav__link">
             <a
-              href="#results"
+              href="#search__bar"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Find Your Book</a>
           </li>
@@ -153,14 +153,11 @@ Our members enjoy exclusive access to book discussions, author interviews, and s
             </li>
           </ul>
         </div>
-      <div class="search__bar">
-      <input
-        type="text"
-        class="search__bar--input"
-        placeholder="Search by genre, author, title, etc..."
-      />
-      <button class="search__bar--btn">Search</button>
-    </div>
+      <form id="search__bar">
+    <input type="text" class="search__bar--input" placeholder="Search by genre, author, title, etc..." required>
+    <button type="submit" class="search__bar--btn">Search</button>
+</form>
+<div id="results"></div>
       </div>
     </section>
     <section id="results">
@@ -181,7 +178,6 @@ Our members enjoy exclusive access to book discussions, author interviews, and s
     <label>
         <input class="genre__checkbox" type="checkbox" value="Romance" onchange="filterGenres()"> Romance
     </label>
-        <button type="submit" class="filter__btn">Filter</button>
 </form>
 <div class="results__wrapper">
      <ul class="results__list">
