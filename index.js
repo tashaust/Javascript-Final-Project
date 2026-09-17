@@ -71,7 +71,7 @@ function fetchBooks(query) {
 
 function displayResults(data) {
     const resultsContainer = document.getElementById('apiResults');
-    resultsContainer.innerHTML = ''; //
+    resultsContainer.innerHTML = ''; 
 
     data.docs.forEach(book => {
         const bookDiv = document.createElement('div');
