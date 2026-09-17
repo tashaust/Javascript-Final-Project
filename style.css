@@ -72,6 +72,7 @@ textarea:focus {
 .container {
   padding: 50px 50px;
   width: 100%;
+  position: relative;
 }
 
 .row {
@@ -411,14 +412,13 @@ nav {
 }
 
 .search__bar {
-  margin-left: 415px;
   width: 100%;
   max-width: 600px;
-  height: 68px;
-  position: relative;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   padding-top: 60px;
 }
 
@@ -428,7 +428,6 @@ nav {
   border: 2px solid #e5e7eb;
   padding: 20px 192px 20px 32px;
   margin-top: 40px;
-  margin-left: 365px;
   color: whitesmoke;
   font-size: 16px;
   font-weight: 500;
@@ -607,19 +606,3 @@ footer {
     margin-left: 1px;
   }
 }
-
-@media (max-width: 480px); {
-  .title {
-    font-size: 52px;
-  }
-  .header__para {
-  font-size: 19px;
-  }
-  .nav__link:first-child {
-    display: none;
-  }
-  .modal__half {
-    padding: 40px;
-  }
-
-} 
