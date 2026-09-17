@@ -72,7 +72,6 @@ textarea:focus {
 .container {
   padding: 50px 50px;
   width: 100%;
-  position: relative;
 }
 
 .row {
@@ -413,13 +412,13 @@ nav {
 
 .search__bar {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   padding-top: 60px;
+  gap: 8px;
 }
 
 .search__bar--input {
@@ -441,11 +440,10 @@ nav {
 }
 
 .search__bar--btn {
-  margin-top: 47px;
-  position: absolute;
+  margin-top: 40px;
   height: 30px;
   width: 90px;
-  z-index: 1;
+  flex-shrink: 0;
   border-radius: 500px;
   border: none;
   background-color: #048c7f;
@@ -600,9 +598,5 @@ footer {
   }
   .modal__half {
     width: 100%;
-  }
-  
-  .search__bar--input {
-    margin-left: 1px;
   }
 }
