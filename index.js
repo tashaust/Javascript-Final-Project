@@ -70,16 +70,16 @@ function fetchBooks(query) {
 }
 
 function displayResults(data) {
-    const resultsContainer = document.getElementById('results');
+    const resultsContainer = document.getElementById('apiResults');
     resultsContainer.innerHTML = ''; //
 
-    data.books.forEach(book => {
+    data.docs.forEach(book => {
         const bookDiv = document.createElement('div');
-        bookDiv.innerHTML = `
-            <h3>${book.title}</h3>
-            <p>${book.author}</p>
-            <p>${book.description}</p>
-        `;
+bookDiv.innerHTML = `
+  <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" alt="${book.title}">
+  <h3>${book.title}</h3>
+  <p>${book.author_name}</p>
+`;
         resultsContainer.appendChild(bookDiv);
     });
 }
