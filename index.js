@@ -56,12 +56,12 @@ function filterGenres() {
 document.getElementById('search__bar').addEventListener('submit', function(event) {
     event.preventDefault(); // 
 
-    const query = document.getElementById('search__bar--input').value; // 
+    const query = document.querySelector('.search__bar--input').value; // 
     fetchBooks(query); // 
 });
 
 function fetchBooks(query) {
-    const apiUrl = `https://openlibrary.org/search.json?q=test`;
+    const apiUrl = `https://openlibrary.org/search.json?q=${query}`;
 
     fetch(apiUrl)
         .then(response => response.json())
