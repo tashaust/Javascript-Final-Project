@@ -583,7 +583,7 @@ footer {
 }
 
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .title {
     font-size: 80px;
   }
@@ -602,6 +602,10 @@ footer {
   .modal__half {
     width: 100%;
   }
+  
+  .search__bar--input {
+    margin-left: 1px;
+  }
 }
 
 @media (max-width: 480px); {
@@ -617,4 +621,5 @@ footer {
   .modal__half {
     padding: 40px;
   }
-} */
+
+} 
